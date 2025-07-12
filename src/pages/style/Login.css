@@ -1,0 +1,98 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+}
+
+/* Center the page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f6f9fc, #d9e4f5);
+}
+
+/* Card-like login form */
+.login-form {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.login-form:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+/* Form inputs */
+.login-form input {
+  width: 92.5%;
+  padding: 14px;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.login-form input:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+}
+
+/* Submit button */
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #0077cc, #005fa3);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+  background: linear-gradient(to right, #005fa3, #003f80);
+}
+
+/* Error message */
+.error-msg {
+  color: #d63031;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 0.95rem;
+  }
+}
